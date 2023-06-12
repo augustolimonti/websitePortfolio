@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* square buttons */
+.rec.rec-arrow {
+    border-radius: 50%;
+    background-color: #5f89af;
+    color: white;
+    margin-left: 20px; /* Adjust the value as needed */
+    margin-right: 20px;
+
+}
+
+.rec.rec-arrow:disabled {
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    margin-left: 20px; /* Adjust the value as needed */
+    margin-right: 20px;
+}
+
+/* hide disabled buttons */
+
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 245, 197, 0.5); /* Adjust the color and opacity as desired */
+  z-index: 1;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.font-tech {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.grid-fit-text {
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header{
+  height: 63px;
+  background: rgb(243,181,79);
+  background: linear-gradient(180deg, rgba(11, 11, 96) 33.3%, rgba(100,135,173) 33.3%, rgba(113,186,219) 66.6%, rgba(154,221,230) 66.66%, rgba(154,221,230) 100%);
+}
+
+@media (min-width:640px) {
+  .header{
+    height: 100px;
+    background: rgb(243,181,79);
+    background: linear-gradient(180deg, rgba(11, 11, 96) 33.3%, rgba(100,135,173) 33.3%, rgba(113,186,219) 66.6%, rgba(154,221,230) 66.66%, rgba(154,221,230) 100%);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+.background-image {
+    background-image: url('./img/BodyShop.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* You can also use 'contain' here if you want the image to be fully visible */
+}
