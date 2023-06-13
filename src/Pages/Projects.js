@@ -82,8 +82,8 @@ const ProjectSection = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref}>
-      <div className="flex flex-col justify-center items-center h-full mb-16">
-         <div className="h-4/5 w-[90%] md:w-3/5 items-start">
+      <div className="flex flex-col justify-center items-center h-full mb-16 xl:h-screen xl:mb-0">
+         <div className="w-[90%] md:w-3/5 items-start">
            <div className="flex flex-rows gap-4 justify-center items-center">
              <hr className="border-back-400 border-t-1 self-center -mt-3 w-full" />
              <div className="flex text-xl lg:text-4xl 3xl:text-6xl justify-center items-center font-lato-regular mb-2 text-back-400 min-w-[150px] md:min-w-[300px] 3xl:min-w-[500px]">

@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const ContactSection = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} className="min-h-screen mt-24">
-      <div className="flex justify-center items-center h-full">
+      <div className="flex justify-center items-center h-full xl:h-screen xl:mb-0">
          <div className="h-4/5 w-[90%] md:w-3/5 items-start">
           <div className="flex flex-rows gap-4 justify-center items-center mb-8">
             <hr className="border-back-400 border-t-1 self-center -mt-3 w-full" />
